@@ -1,1 +1,122 @@
 @forward'globals';
+@forward'util';
+@use '../scss/globals/colors';
+
+
+//Pocetna styles
+
+//navbar
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-logo{
+    width: 60px;
+}
+
+.nav-links{
+    display: flex;
+    padding: 0;
+}
+
+.nav-links > li{
+    padding: 0 10px;
+    
+}
+
+.nav-links > li > a{
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+}
+//hero-image section
+
+.hero-image{
+  background-image: linear-gradient(rgba(184, 161, 133, 0.58), rgba(184, 161, 133, 0.58)),url("../../images/jeka.jpeg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 100;
+  }
+
+// o-meni section
+
+h2, p{
+    color: colors.$gray-letters;
+}
+
+.button{
+    padding: 1em 5em;
+    background-color: rgba(121,65,14,.56);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.o-meni{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.o-meni_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-evenly;
+}
+
+.o-meni_img{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+//info setion
+.info{
+    background-color: colors.$gray-background;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0;
+    
+    
+}
+
+.block{
+    width: 30%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    margin: 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.036);
+}
+
+
+
+span{
+    font-size: 12px;
+    font-weight: 100;
+    color: colors.$gray-letters;
+}
+
