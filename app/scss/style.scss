@@ -32,7 +32,7 @@
 .nav-links > li > a{
     color: white;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
 }
 //hero-image section
 
@@ -59,6 +59,7 @@
 
 h2, p{
     color: colors.$gray-letters;
+    text-align: center;
 }
 
 .button{
@@ -84,6 +85,7 @@ h2, p{
 
 .o-meni_img{
     width: 100%;
+    min-width: 350px;
     height: 500px;
     overflow: hidden;
     display: flex;
@@ -103,7 +105,7 @@ h2, p{
 .block{
     width: 30%;
     display: flex;
-    padding: 30px;
+    padding: 60px 30px;
     flex-direction: column;
     align-items: center;
 }
@@ -120,3 +122,73 @@ span{
     color: colors.$gray-letters;
 }
 
+//upoznajmo se section 
+
+.upoznajmo-se{
+    display: flex;
+    flex-direction: row-reverse;
+
+    .upoznajmo-se_text,.upoznajmo-se_img{
+        width: 50%;
+    }
+
+    .upoznajmo-se_img{
+        min-width: 415px;
+    }
+
+}
+
+//footer
+
+footer{
+    background-color: colors.$button-color;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links{
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    padding: 20px 0;
+}
+
+.icons > img{
+    padding: 10px 20px;
+}
+
+//*******************//Media Queries//******************************
+/* Stilovi za tablete */
+//pocetna strana
+@media (max-width: 991px) {
+    // .navbar {
+    //     flex-direction: column-reverse;
+    //     align-items: center;
+    // }
+    .nav-links>li>a {
+        font-size: 12px;
+    }
+
+    .paragraphs{
+        text-align: center;
+    }
+
+    .hero-image{
+        height: 40vh;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    
+    .button{
+        padding:10px 20px ;
+        
+    }
+    
+  }
