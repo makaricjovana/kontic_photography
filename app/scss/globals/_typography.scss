@@ -17,4 +17,7 @@ ul{
 
 a, a:visited, a:active {
     text-decoration: none;
+    cursor: pointer;
+    border-bottom: 0.5px solid transparent;
+    transition: border-bottom 0.5s;
 }

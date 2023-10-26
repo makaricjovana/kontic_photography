@@ -6,6 +6,10 @@
 //Pocetna styles
 
 //navbar
+
+.mobile{
+    display: none;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -33,6 +37,8 @@
     color: white;
     font-weight: 300;
     font-size: 15px;
+    padding-bottom: 5px;
+    transition: border-bottom 0.3s;
 }
 //hero-image section
 
@@ -63,11 +69,13 @@ h2, p{
 }
 
 .button{
+    border: 0.5px solid rgba(255, 255, 255, 0);
     padding: 1em 5em;
     background-color: rgba(121,65,14,.56);
     border-radius: 50px;
     color: #fff;
     font-size: 13px;
+    transition: all 0.3s;
 }
 
 .o-meni{
@@ -108,6 +116,7 @@ h2, p{
     padding: 60px 30px;
     flex-direction: column;
     align-items: center;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Tranzicija za boju pozadine */
 }
 hr{
     margin: 0;
@@ -161,10 +170,38 @@ footer{
     padding: 10px 20px;
 }
 
+
+
+// hover effects
+.block:hover {
+    background-color: colors.$gray-background; /* Boja pozadine na hover */
+    color:colors.$gray-letters;
+    box-shadow: 2px 2px 5px rgba(73, 73, 73, 0.5);
+  }
+
+.button:hover{
+    background-color: colors.$background;
+    border: 0.5px solid colors.$button-color;
+    color: colors.$button-color;
+} 
+
+
+
+.nav-links>li>a:hover {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.305);
+     
+    
+}
+    
+
+
+
 //*******************//Media Queries//******************************
 /* Stilovi za tablete */
 //pocetna strana
 @media (max-width: 991px) {
+    
+
     // .navbar {
     //     flex-direction: column-reverse;
     //     align-items: center;
@@ -192,3 +229,116 @@ footer{
     }
     
   }
+
+  /* Stilovi za telefone */
+//pocetna strana
+@media (max-width: 680px){
+    h1, h2{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+
+    span{
+        font-size: 10px;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+         align-items: center;
+    }
+
+    .nav-logo{
+        width: 50px;
+    }
+    .mobile-nav_logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        
+    }
+    .mobile-nav_hamburger{
+            position: absolute;
+            right: 15px;
+        }
+
+    .hero-image{
+        height: 70vh;
+    }
+
+    .o-meni{
+        display: flex;
+        flex-direction: column;
+
+        .o-meni_img{
+            height: 320px;
+            min-width: 0px;
+        }
+    }
+
+    .info{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    hr{
+        width: 70%;
+    }
+
+    .upoznajmo-se{
+        flex-direction: column-reverse;
+        position: relative;
+
+        .upoznajmo-se_text{
+            position: absolute;
+            width: 100%;
+            background: #8b45136b;
+        }
+
+        .upoznajmo-se_img{
+            min-width: 0px;
+            height: auto;
+            width: 100%;
+
+        }
+
+        .upoznajmo-se_text >h2, .paragraphs>p{
+            color: white;
+        }
+
+        .peachy{
+            background-color: #fccea5e9;
+
+        }
+        .button.peachy:hover{
+            background-color: rgba(255, 255, 255, 0.887);
+            border: 1px solid transparent;
+            color: colors.$peachy-color;
+        }
+
+
+    }
+
+    footer{
+        .footer-links{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-links>li{
+            padding: 10px 0;
+        }
+    }
+}
