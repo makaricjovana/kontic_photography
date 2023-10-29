@@ -29,10 +29,26 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
-.item-one{
+.horizontal-left{
     grid-column-start: 1;
     grid-column-end: 3;
 }
+.horizontal-right{
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.horizontal{
+    grid-column: 2/ span 2;
+}
 .portfolio-item:hover {
     transform: scale(1.05);
+}
+
+@media(max-width:500px){
+    .portfolio_grid{
+        display: flex;
+        flex-direction: column;
+    }
 }
