@@ -32,3 +32,11 @@ hamburger.addEventListener('click', openSideMenu);
 
 // Dodajte event listener za zatvaranje side menija
 closeMenu.addEventListener('click', closeSideMenu);
+
+// Stranica o-meni
+const video = document.getElementById("myVideo");
+
+  video.addEventListener("ended", function () {
+    video.currentTime = 0; // Postavlja trenutno vreme na početak videa
+    video.play(); // Pokreće video ponovo
+  });
