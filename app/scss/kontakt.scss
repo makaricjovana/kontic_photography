@@ -1,0 +1,5 @@
+@use '../scss/globals/colors';
+
+label{
+    color:colors.$gray-letters;
+}
