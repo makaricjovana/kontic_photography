@@ -339,6 +339,7 @@ footer{
         }
 
 
+
     }
 
     footer{
@@ -361,7 +362,7 @@ footer{
     position: fixed;
     z-index: 2;
     background-color: white;
-    right: 0px;
+    right: 0;
     height: 100vh;
     width: 60%;
     display: flex;
@@ -371,6 +372,7 @@ footer{
     transition: right 1s; 
     }
 
+    
 
         .side-menu_links{
             display: flex;

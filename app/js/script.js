@@ -18,6 +18,7 @@ function openSideMenu() {
     sideMenu.classList.remove('none');
     sideMenuBackground.classList.remove('none');
     
+    
 }
 
 // Funkcija za zatvaranje side menija
