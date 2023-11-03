@@ -12,13 +12,13 @@ const sideMenuBackground = document.querySelector('.side-menu_background');
 sideMenu.classList.add('none');
 sideMenuBackground.classList.add('none');
 
+
+
 // Funkcija za otvaranje side menija
 function openSideMenu() {
     // Uklonite klasu 'none' sa side menija i pozadinske boje
     sideMenu.classList.remove('none');
     sideMenuBackground.classList.remove('none');
-    
-    
 }
 
 // Funkcija za zatvaranje side menija
@@ -26,6 +26,7 @@ function closeSideMenu() {
     // Dodajte klasu 'none' na side meni i pozadinsku boju
     sideMenu.classList.add('none');
     sideMenuBackground.classList.add('none');
+    
 }
 
 // Dodajte event listener za otvaranje side menija
@@ -41,3 +42,5 @@ const video = document.getElementById("myVideo");
     video.currentTime = 0; // Postavlja trenutno vreme na početak videa
     video.play(); // Pokreće video ponovo
   });
+
+  

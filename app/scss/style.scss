@@ -43,7 +43,7 @@
 //hero-image section
 
 .hero-image{
-  background-image: linear-gradient(rgba(184, 161, 133, 0.58), rgba(184, 161, 133, 0.58)),url("../images/porodica.jpeg");
+  background-image: linear-gradient(rgba(184, 161, 133, 0.442), rgba(184, 133, 149, 0.423)),url("../images/olesia-buyar-Ar9xZN7yF8Q-unsplash.jpg");
   height: 70vh;
   background-position: top;
   background-repeat: no-repeat;
@@ -362,16 +362,16 @@ footer{
     position: fixed;
     z-index: 2;
     background-color: white;
-    right: 0;
+    right: 0px;
     height: 100vh;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    transition: right 1s; 
+    justify-content: space-around; 
+    padding-bottom: 200px;
+    
     }
-
     
 
         .side-menu_links{
