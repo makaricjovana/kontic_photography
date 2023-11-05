@@ -1,13 +1,13 @@
 h1, h2, h3{
     line-height: 1.1;
     margin-top: 0;
-    font-weight: 200;
+    font-weight: 300!important;
     
 }
 
 p{
     margin-top: 0;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 ul{
@@ -21,3 +21,4 @@ a, a:visited, a:active {
     border-bottom: 0.5px solid transparent;
     transition: border-bottom 0.5s;
 }
+
