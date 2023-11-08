@@ -23,13 +23,14 @@ iframe{
     display: flex;
     justify-content: center;
     padding: 50px 0px;
-    width: 100%;
+    
  }
 
  .list-unstyled{
     display: flex;
     align-items: baseline;
  }
+ 
 
  .form-icons >ul> li> p{
     font-size: 12px;
@@ -54,6 +55,7 @@ iframe{
     }
     .form-icons > ul >li {
         padding: 0 2%;
+        width: 33%;
 
       }  
     }
