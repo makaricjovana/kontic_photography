@@ -8,28 +8,28 @@
   if (isset($_POST['subject']))
     $subject = $_POST['subject'];
   if ($name === '') {
-    echo "Name cannot be empty.";
+    echo "Popunite ovo polje.";
     die();
   }
   if ($email === '') {
-    echo "Email cannot be empty.";
+    echo "Ovo polje mora biti popunjeno.";
     die();
   } else {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      echo "Email format invalid.";
+      echo "Nevažeća mail adresa.";
       die();
     }
   }
   if ($subject === '') {
-    echo "Subject cannot be empty.";
+    echo "Ovo polje mora biti popunjeno.";
     die();
   }
   if ($message === '') {
-    echo "Message cannot be empty.";
+    echo "Ovo polje mora biti popunjeno.";
     die();
   }
   $content = "From: $name \nEmail: $email \nMessage: $message";
-  $recipient = "youremail@here.com";
+  $recipient = "photo.jkontic@gmail.com";
   $mailheader = "From: $email \r\n";
   mail($recipient, $subject, $content, $mailheader) or die("Error!");
   echo "Email sent!";
